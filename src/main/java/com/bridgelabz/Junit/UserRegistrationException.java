@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class UserRegistrationException {
 
 	public static void main(String[] args) throws CustomException {
+		
 		UserRegistrationE userRegistration = new UserRegistrationE();
 		System.out.println("Welcome to User Registration::");
 		Scanner scanner = new Scanner(System.in);

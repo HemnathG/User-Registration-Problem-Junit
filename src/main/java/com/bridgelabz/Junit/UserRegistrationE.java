@@ -10,7 +10,7 @@ public class UserRegistrationE {
 			.compile("^[a-zA-Z]+[a-zA-Z0-9]*[- . + _]?[a-zA-Z0-9]+[@]{1}[a-z0-9]+[.]{1}[a-z]+[.]?[a-z]+$");
 	static final Pattern phone = Pattern.compile("^[0-9]{2}[ ]?[0-9]{10}$");
 	static final Pattern password = Pattern
-			.compile("\"^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()])([a-zA-Z0-9]*).{8,}$\";");
+			.compile("^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()])([a-zA-Z0-9]*).{8,}$");
 
 	public static boolean check(String inputs) throws CustomException {
 		Matcher matcher = names.matcher(inputs);
